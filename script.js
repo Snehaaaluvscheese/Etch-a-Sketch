@@ -14,6 +14,8 @@ for (let i = 1; i < 256; i++){
     div2.addEventListener('mouseover', () => {
         div2.classList.add('drawLines');
     });
+
+    // creates 16x16 grid
     
 }
 
@@ -21,33 +23,24 @@ div1.addEventListener('mouseover', () => {
     div1.classList.add('drawLines');
 });
 
+// draws lines on hover over grid
+
 function gridSquares() {
    let result = prompt("Number of squares (not more than 100) per side?");
    if (result < 101) {
-    
-        gridContainer.setAttribute('style', `
-            display: grid;
-            width: 400px;
-            height: 400px;
-            grid-column-start: 1;
-            grid-column-end:${result}; 
-            grid-row-start: 1;
-            grid-row-end: ${result};
-            margin-left: 20cm;
-            margin-top: 8cm;
-            padding: 0;
-          
-          `);
-
-        gridContainer.removeAttribute('id', 'grid-container');
-    
+     
 
    }
+
+   else return;
 }
+
+// function that makes new grid 
 
 const btn = document.querySelector('#gridButton');
 btn.addEventListener('click', () => { 
     gridSquares();
 });
 
+// button when clicked asks for squares per side 
 
