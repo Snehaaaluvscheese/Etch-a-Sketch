@@ -7,22 +7,19 @@ html {
   display: grid;
   width: 400px;
   height: 400px;
-  grid-template-columns: repeat(16, 25px);
-  grid-template-rows: repeat(16, 25px);
+
   margin-left: 20cm;
   margin-top: 8cm;
   padding: 0;
 }
  
 
-.div1 {
+.grid-div {
   border: 1px solid darkmagenta;
  
 }
 
-.div2 {
-  border: 1px solid darkmagenta;
-}
+
 
 .drawLines {
   background-color: pink;
@@ -45,14 +42,5 @@ html {
   box-shadow: 5px 10px lightgray;
 }
 
-.newGrid {
-  display: grid;
-  max-width: 400px;
-  max-height: 400px;
-  grid-template-columns: repeat(result, auto);
-  
-  margin-left: 20cm;
-  margin-top: 8cm;
-  padding: 0;
 
-}
+

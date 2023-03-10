@@ -1,46 +1,27 @@
 const gridContainer = document.querySelector('#grid-container');
 
-const div1 = document.createElement('div');
-div1.classList.add('div1');
-gridContainer.appendChild(div1);
+// selected div with id grid-container 
+
+function makeGrid(side) {
 
 
-
-for (let i = 1; i < 256; i++){
-    const div2 = document.createElement('div');
-    div2.classList.add('div2');
-    gridContainer.appendChild(div2);
-
-    div2.addEventListener('mouseover', () => {
-        div2.classList.add('drawLines');
-    });
-
-    // creates 16x16 grid
     
-}
+    for (let i = 0; i < (side * side); i++) {
 
-div1.addEventListener('mouseover', () => {
-    div1.classList.add('drawLines');
-});
+        gridContainer.style.cssText =   `grid-template-columns: repeat(${side}, 25fr); grid-template-rows: repeat(${side}, 25fr);`
 
-// draws lines on hover over grid
+        const gridDiv = document.createElement('div');
+        gridDiv.classList.add('grid-div');
+        gridContainer.appendChild(gridDiv);
 
-function gridSquares() {
-   let result = prompt("Number of squares (not more than 100) per side?");
-   if (result < 101) {
-     
+        gridDiv.addEventListener('mouseover', () => {
+            gridDiv.classList.add('drawLines');
+          });
+      }
 
-   }
+    }
 
-   else return;
-}
+    // function to style and make Grid and add hover effect
 
-// function that makes new grid 
-
-const btn = document.querySelector('#gridButton');
-btn.addEventListener('click', () => { 
-    gridSquares();
-});
-
-// button when clicked asks for squares per side 
-
+    makeGrid(16);
+    // calls function to make 16 x 16 grid 
