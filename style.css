@@ -1,23 +1,15 @@
-html {
-  margin: 0;
-  padding: 0;
-}
 
 #grid-container {
   display: grid;
-  width: 400px;
-  height: 400px;
-
-  margin-left: 20cm;
-  margin-top: 8cm;
-  padding: 0;
+  width: 600px;
+  height: 600px;
+  box-sizing: border-box;
+  margin-left: 670px;
+ 
 }
  
 
-.grid-div {
-  border: 1px solid darkmagenta;
- 
-}
+
 
 
 
