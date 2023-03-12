@@ -5,10 +5,17 @@
   height: 600px;
   box-sizing: border-box;
   margin-left: 670px;
+  background-color: white;
  
 }
  
+body {
+  background-image: url("background.png");
+  background-repeat: no-repeat;
+  background-size:cover;
 
+
+}
 
 
 
@@ -32,6 +39,12 @@
   color: white;
   font-size: larger;
   box-shadow: 5px 10px lightgray;
+}
+
+.h1 {
+  margin-left: 870px;
+  color:lightblue;
+
 }
 
 
